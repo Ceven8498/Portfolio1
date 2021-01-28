@@ -1,6 +1,12 @@
 import React from 'react';
 import "../../index.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import {fab, faTwitterSquare, faFacebook, faLinkedin, faGithub} from "@fortawesome/free-brands-svg-icons";
 import MERN from "../../assets/images/MERN-logo.png"
+
+library.add(fab, faTwitterSquare, faFacebook, faLinkedin, faGithub); 
+
 function About(props) {
     return (
         
@@ -51,10 +57,32 @@ function About(props) {
                             Animation, and
                             Art.
                         </p>
+                    <div class="smi">
+                        <a href='https://twitter.com/Christo86202181'>
+                        <span class="twi">
+                        <FontAwesomeIcon icon={['fab', 'twitter']} size='4x' color='white' />
+                        </span>
+                        </a>
+                        <a href='https://www.facebook.com/chris.even.370'>
+                        <span class="twi">
+                        <FontAwesomeIcon icon={['fab', 'facebook']} size='4x' color='white' />
+                        </span>
+                        </a>
+                        <a href='https://www.linkedin.com/in/christopher-even-90247897/'>
+                        <span class="twi">
+                        <FontAwesomeIcon icon={['fab', 'linkedin']} size='4x' color='white' />
+                        </span>
+                        </a>
+                        <a href='https://github.com/Ceven8498'>
+                        <span class="twi">
+                        <FontAwesomeIcon icon={['fab', 'github']} size='4x' color='white' />
+                        </span>
+                        </a>
+                    </div>
                     </div>
 
                 </div>
-
+            
             </div>
         </div>
 
